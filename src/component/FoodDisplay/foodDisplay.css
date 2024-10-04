@@ -1,0 +1,45 @@
+.food-display{
+    margin-top: 30px;
+}
+
+.food-display h2{
+    font-size: max(2vw , 24px);
+    font-weight: 500;
+}
+
+.food-list-diaplay{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(240px , 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.food-item-info{
+    padding: 20px;
+}
+.food-item-reating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.food-item-reating p{
+    font-size: 20px ;
+    font-weight: 500;
+}
+.food-item-reating img{
+    width: 70px;
+}
+.food-item-description{
+    color: #767676;
+    font-size: 12px
+}
+
+.food-item-price{
+    color: tomato;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 500;
+}
