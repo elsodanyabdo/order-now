@@ -13,15 +13,14 @@ nav{
     justify-content: center;
     /* align-items: center; */
     gap: 40px;
-}
-.links li{
     font-size: 20px;
+}
+.links a{
     text-transform: capitalize;
     cursor: pointer;
     padding: 10px;
-
 }
-.links li.active{
+.links a.active{
     padding-bottom:2px ;
     border-bottom: 2px solid #49557e;
 }
@@ -66,10 +65,58 @@ nav{
     -moz-transition: all ease 0.3s;
     -ms-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: capitalize;
 }
 .nav-right button:hover{
     background-color: tomato;
     color: white ;
+}
+
+@media (max-width:1050px) {
+    .logo{
+        width: 140px;
+    }
+    .links{
+        gap: 20px;   
+        font-size: 17px;
+    }
+    .nav-right{
+        gap: 20px;
+    }
+    .nav-right img{
+        width: 22px;
+    }
+    .nav-right button{
+        padding: 5px 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width:900px) {
+    .logo{
+        width: 120px;
+    }
+    .links{
+        gap: 15px;   
+        font-size: 15px;
+    }
+    .nav-right{
+        gap: 15px;
+    }
+    .nav-right img{
+        width: 20px;
+    }
+    .nav-right button{
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+}
+@media (max-width:800px) {
+    .logo{
+        width: 80px;
+    }
+    .links{
+        display: none;
+    }
+
 }

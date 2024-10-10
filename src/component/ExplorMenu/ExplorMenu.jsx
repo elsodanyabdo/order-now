@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "./explorMenu.css";
 import { menu_list} from "../../assets/assets";
 
 const ExplorMenu = ({category , setCategory}) => {
   return (
-    <div className="explore-menu">
+    <div className="explore-menu" id="explore">
       <h2>explore our menu</h2>
       <p className="explore-menu-text">
         chisse frin a diverse menu featuring a deleectable array of dishes Our

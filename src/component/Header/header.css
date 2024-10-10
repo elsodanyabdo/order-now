@@ -44,3 +44,45 @@ header{
     font-size: max(1vm , 15px);
     text-transform: capitalize;
 }
+
+@media (max-width:1050px) {
+    header{
+        height: 38vw;
+
+    }
+    .header-content{
+        max-width: 45%;
+        bottom: 20%;
+        left: 6vw;
+    }
+    .header-content h1{
+        font-size: max(2.5vw , 20px);
+        
+    }
+    .header-content p{
+        font-size: 12px;
+    }
+.header-content button{
+    padding:15px 30px;
+    font-size: max(0.8vm , 12px);
+}
+}
+@media (max-width:750px) {
+    header{
+        height: 38vw;
+
+    }
+    .header-content{
+        max-width: 55%;
+    }
+    .header-content h1{
+        font-size: max(2.5vw , 20px);
+        
+    }
+    .header-content p{
+    display: none;
+    }
+.header-content button{
+    padding:2vw  4vw;
+}
+}

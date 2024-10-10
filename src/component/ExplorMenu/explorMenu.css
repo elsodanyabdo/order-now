@@ -13,19 +13,19 @@
 }
 .explore-menu-list{
     display: flex;
-    /* overflow-x: scroll; */
-    flex-wrap: wrap;
-    gap: 30px;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
     text-align: center;
     margin: 20px 0;
+    overflow-x: scroll;
+    /* flex-wrap: wrap; */
 }
-/* .explore-menu-list::-webkit-scrollbar{
+.explore-menu-list::-webkit-scrollbar{
     display: none;
-} */
+}
 .explore-menu-list img{
-    min-height: 80px;
+    min-width: 80px;
     width: 7.5vw;
     cursor: pointer;
     border-radius: 50%;

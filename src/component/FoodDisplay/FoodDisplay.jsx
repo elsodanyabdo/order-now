@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useContext } from "react";
 import "./foodDisplay.css";
 import {StoreContext} from "../../context/StoreContext";
@@ -5,6 +6,7 @@ import FoodItem from "../FoodItem/FoodItem";
 
 
 
+// eslint-disable-next-line react/prop-types
 const FoodDisplay = ({ category }) => {
 
 
