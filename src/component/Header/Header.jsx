@@ -12,7 +12,7 @@ const Header = () => {
           satisy your cracings and elvats your dining experience ,one delicous
           meal at a time.
         </p>
-        <button>view menu</button>
+        <a className="button" href="#exploer">view menu</a>
       </div>
     </header>
   );

@@ -1,14 +1,18 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./navbar.css";
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
+import { StoreContext } from "../../context/StoreContext";
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
+  const {getTotalCartAmount} = useContext(StoreContext)
   return (
     <nav>
+      <Link to="/">
       <img className="logo" src={assets.logo} alt="" />
+      </Link>
       <ul className="links">
         <Link to="/"
           onClick={() => {
@@ -47,8 +51,10 @@ const Navbar = ({ setShowLogin }) => {
       <div className="nav-right">
         <img className="search" src={assets.search_icon} alt="" />
         <div className="nav-bar-basket">
+          <Link to="/cart">
           <img className="basket" src={assets.basket_icon} alt="" />
-          <div className="dot"></div>
+          </Link>
+          <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
         </div>
         <button onClick={() => setShowLogin(true)}> sign in</button>
       </div>

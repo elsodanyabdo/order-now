@@ -31,7 +31,7 @@ header{
     font-size: 15px
 }
 
-.header-content button{
+.header-content .button{
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -62,7 +62,7 @@ header{
     .header-content p{
         font-size: 12px;
     }
-.header-content button{
+.header-content .button{
     padding:15px 30px;
     font-size: max(0.8vm , 12px);
 }
@@ -82,7 +82,7 @@ header{
     .header-content p{
     display: none;
     }
-.header-content button{
+.header-content .button{
     padding:2vw  4vw;
 }
 }

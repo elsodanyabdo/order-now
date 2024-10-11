@@ -13,7 +13,7 @@ const ExplorMenu = ({category , setCategory}) => {
         mission is to satisfy your crvings and elevate your dining experience ,
         one delicious meal at a time
       </p>
-      <div className="explore-menu-list" >
+      <div className="explore-menu-list" id="exploer" >
         {menu_list.map((item ,index ) => { 
             return(
                 <div key={index} onClick={() => { 
